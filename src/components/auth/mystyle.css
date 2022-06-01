@@ -26,7 +26,7 @@
     box-shadow: 10px 10px 10px 10px black;
 }
 
-.btn{
+.bn{
     background-color: blue;
     color: white;
     cursor: pointer;
@@ -36,7 +36,7 @@
     height: 25px;
     margin:10px 10px 10px 100px;
 }
-.btn:hover{
+.bn:hover{
     background-color: lightblue;
     color: black;
     border: none;
@@ -51,22 +51,7 @@ body{
 .main h3{
     margin:0px 10px 15px 100px;
 }
-.Rmain{
-    border:none;
-    border-radius: 10px;
-    height: 620px;
-    width: 500px;
-    text-align: center;
-    margin:100px auto;
-    background-color:transparent;
-    color:blanchedalmond;
-    box-shadow: 10px 10px 10px 10px black;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 .Rform input{
     margin:12px;
     padding:12px;
@@ -85,15 +70,9 @@ body{
 
     ul li {
         background-color: blue;
-        color:white;
         cursor: pointer;
         border: none;
-        border-radius: 10px;
-        /* height: 25px; */
-        /* margin:10px 10px 10px 100px; */
-        text-decoration: none;
-        list-style: none;
-        display: inline;
+        /* border-radius: 10px; */
 
     }
     ul li a{
@@ -101,8 +80,6 @@ body{
         cursor: pointer;
         border: none;
         border-radius: 10px;
-        /* height: 25px; */
-        /* margin:10px 10px 10px 20px; */
         text-decoration: none;
         list-style: none;
         text-align: center;
@@ -126,4 +103,27 @@ button a{
 }
 .signup{
     margin-top: 10px;
+}
+.labels{
+    margin:12px;
+    padding:12px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    width: 400px;
+}
+.Rmain{
+    border:none;
+    border-radius: 10px;
+    height: 772px;
+    width: 474px;
+    text-align: center;
+    margin:100px auto;
+    background-color:transparent;
+    color:blanchedalmond;
+    box-shadow: 10px 10px 10px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

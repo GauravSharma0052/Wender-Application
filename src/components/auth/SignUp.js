@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function SignUp() {
     var [nuser, setnuser] = useState({
@@ -33,26 +33,36 @@ export default function SignUp() {
         alert(`First Name = ${nuser.fName}\nLast Name=${nuser.lName}\nEmail=${nuser.email}\nUser Name=${nuser.username}\nPassword=${nuser.password}\nConfirm Password=${nuser.Cpassword}`)
     }
 
+//  const handle=()=>{
+        
+//         localStorage.setItem("First Name",nuser.lname)
+//         localStorage.setItem("First Name",nuser.email)
+//         localStorage.setItem("First Name",nuser.username)
+//         localStorage.setItem("First Name",nuser.password)
+//         localStorage.setItem("First Name",nuser.Cpassword)
+//  }
     return (
         <>
             <div className='Rmain'>
                 <h3>SignUp Form</h3>
                 <form onSubmit={posstData} className="Rform">
                     <label>First Name:
-                        <input type="text" name="fName" placeholder='Enter Your First Name' onChange={gettData} required minLength={3} /></label><br />
+                        <input className='labels' type="text" name="fName" placeholder='Enter Your First Name' onChange={gettData} required minLength={3} /></label><br />
                     <label>Last Name:
-                        <input type="text" name="lName" placeholder='Enter Your Last Name' onChange={gettData} required minLength={3} /></label><br />
+                        <input className='labels' type="text" name="lName" placeholder='Enter Your Last Name' onChange={gettData} required minLength={3} /></label><br />
                     <label>Email:
-                        <input type="email" name="email" placeholder='Enter Your Email' onChange={gettData} required minLength={13} /></label><br />
+                        <input className='labels' type="email" name="email" placeholder='Enter Your Email' onChange={gettData} required minLength={13} /></label><br />
                     <label>Username:
-                        <input type="text" name="username" placeholder='Enter Your User Name' onChange={gettData} required minLength={5} /></label><br />
+                        <input className='labels' type="text" name="username" placeholder='Enter Your User Name' onChange={gettData} required minLength={5} /></label><br />
                     <label>Password:
-                        <input type="password" name="password" placeholder='Create Password' onBlur={gettData} required minLength={6} /></label><br />
+                        <input className='labels' type="password" name="password" placeholder='Create Password' onBlur={gettData} required minLength={6} /></label><br />
                     <label>Confirm Password:
-                        <input type="password" name="Cpassword" placeholder='Confirm Password' onBlur={gettData} required minLength={6} /></label><br />
-                    <button type='submit' className='btn signup'>Sign Up</button>
+                        <input className='labels' type="password" name="Cpassword" placeholder='Confirm Password' onBlur={gettData} required minLength={6} /></label><br />
+                    <button type='submit' className='bn signup'>Sign Up</button>
                 </form>
-                <button className='btn signup'><Link to="/LogIn">LogIn</Link></button>
+                <label>
+                <button className='bn signup'><NavLink to="/LogIn">LogIn</NavLink></button>
+                </label>
                 {/* <ul className='btn signup'><li><Link to="/LogIn">LogIn</Link></li></ul> */}
             </div>
         </>
